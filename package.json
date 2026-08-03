@@ -1,0 +1,15 @@
+{
+  "name": "iblis",
+  "description": "Game Stats Services based on api/save-files/manual entries",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
