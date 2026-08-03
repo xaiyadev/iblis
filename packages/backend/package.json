@@ -1,0 +1,7 @@
+{
+  "name": "@iblis/backend",
+  "description": "the backend for iblis",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true
+}
