@@ -1,24 +1,12 @@
-import { APITester } from "./APITester";
-import "./index.css";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
+const elem = document.getElementById("root")!;
+const app = (
+  <StrictMode>
+    <div>Hoii !!!</div>
+  </StrictMode>
+);
 
-export function App() {
-  return (
-    <div className="app">
-      <div className="logo-container">
-        <img src={logo} alt="Bun Logo" className="logo bun-logo" />
-        <img src={reactLogo} alt="React Logo" className="logo react-logo" />
-      </div>
-
-      <h1>Bun + React</h1>
-      <p>
-        Edit <code>src/App.tsx</code> and save to test HMR
-      </p>
-      <APITester />
-    </div>
-  );
-}
-
-export default App;
+// https://bun.com/docs/bundler/hot-reloading#import-meta-hot-data
+(import.meta.hot.data.root ??= createRoot(elem)).render(app);
