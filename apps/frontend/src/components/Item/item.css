@@ -1,0 +1,26 @@
+.listed-items {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 20px 20px 20px;
+}
+
+.item {
+    display: flex;
+
+    margin: 7px;
+    padding: 5px 10px;
+
+    border: 2px solid;
+    border-radius: 5px;
+
+
+    li {
+        list-style: none;
+
+        position: relative;
+
+        width: 33%; /* TODO: Update based on li elements in this ul */
+        padding: 5px 10px;
+    }
+}

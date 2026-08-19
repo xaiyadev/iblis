@@ -2,9 +2,15 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+
+    font-family: "JetBrains Mono", sans-serif;
 }
 
 body {
     background-color: black;
     color: white;
+}
+
+.header {
+    padding: 20px 0 10px 30px;
 }
